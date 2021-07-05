@@ -16,9 +16,9 @@ import subprocess as sp
 import concurrent.futures as cf
 from colorama import Fore, Back, Style
 
-RSNC_path = os.path.join(os.getcwd(),"csv","rsnc.csv")
-RNAC_path = os.path.join(os.getcwd(),"csv","rnac.csv")
-INTER_path = os.path.join(os.getcwd(),"csv","inter.csv")
+RSNC_path = os.path.join(os.path.dirname(__file__),"csv","rsnc.csv")
+RNAC_path = os.path.join(os.path.dirname(__file__),"csv","rnac.csv")
+INTER_path = os.path.join(os.path.dirname(__file__),"csv","inter.csv")
 
 DEFAULT_args = {'online':None,'delta_time':120,'server':"232",
                 'network':None,'location':None,'status':None,'add':None}
