@@ -1,6 +1,6 @@
 ![SGC](images/sgc_logo.png)<!-- .element width="700"-->
 
-# SGC_noche 
+# Checklist
 
 Rutina realizada para hacer el checklist de las estaciones de la RSNC, RNAC,INTER. 
 
