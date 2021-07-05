@@ -119,7 +119,7 @@ def do_checklist(csv,sec=600,server="232",level="channel"):
     exe = lambda row: get_currentdate(row["network"],row["station"],row["location"]
                                     ,row["channel"], level=level,server=server)
     info["first_slinktool"] = info.apply( exe,axis=1 )
-    today = dt.datetime.now()
+    today = dt.datetime.utcnow()
 
     # print("Espere 15 segundos")
     time.sleep(15)
