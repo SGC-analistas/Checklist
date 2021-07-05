@@ -6,8 +6,9 @@ Rutina realizada para hacer el checklist de las estaciones de la RSNC, RNAC,INTE
 
 Se basa en hacerle slinktool a todas las estaciones en dos ocasiones. 
 La idea es tener la diferencia de tiempo de los slinktool. Si la diferencia de tiempo 
-es mayor al valor del argumento *dt* que por defecto esta en *120s* entonces esta
-por *offline* o *recovering*, depende si la diferencia de tiempo es *0 s* esta offline,
+es menor al valor del argumento *dt* (Limite de tiempo en segundos para decir que esta por fuera) 
+que por defecto esta en *120s* entonces la estación esta *online*, de lo contrario esta
+*offline* o *recovering*, depende si la diferencia de tiempo es *0 s* esta offline,
 si la diferencia de tiempo es *>0 s* esta recovering.
 
 **SI ESTA EN EL PROC 4, NO ES NECESARIO REVISAR LA SECCIÓN DE INSTALACIÓN**
