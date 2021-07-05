@@ -11,7 +11,6 @@ import os
 import argparse
 import time
 import datetime as dt
-from typing import DefaultDict
 import pandas as pd
 import subprocess as sp
 import concurrent.futures as cf
