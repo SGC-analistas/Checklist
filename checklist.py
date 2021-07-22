@@ -150,7 +150,7 @@ def do_checklist(csv,sec=600,server="232",level="channel"):
     status = lambda row: get_status(row["current_delta"],row["delta_slinktool"],sec)
     info["status"] = info.apply( status,axis = 1)
 
-    df = info[["network","station","location","channel","status"]]
+    df = info[["network","station","location","channel","status","second_slinktool"]]
     
 
     # with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
@@ -223,7 +223,7 @@ def run(sec=600,server="232",filter_network=None,
 
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
         os.system("clear")
-        print(checklist_df)
+        print(checklist_df.to_string(index=False))
 
 def time_real_run(chunktime,sec=600,server="232",filter_network=None,
                 filter_location=None,filter_status=None):
